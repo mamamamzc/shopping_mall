@@ -1,6 +1,7 @@
 <template>
   <div>
-    这是购物车
+    这是购物车<br>
+    hhhh
     <menubar></menubar>
   </div>
 </template>
