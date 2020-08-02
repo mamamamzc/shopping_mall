@@ -1,7 +1,7 @@
 <template>
   <div>
     这是购物车<br>
-    hhhh
+    hhhh这是一个测试
     <menubar></menubar>
   </div>
 </template>
