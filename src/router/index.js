@@ -4,6 +4,7 @@ import Home from '../views/Home/index.vue'
 import Category from '../views/Category/index.vue'
 import Mine from '../views/Mine/index.vue'
 import Cart from '../views/Cart/index.vue'
+import Detail from '../components/Detail/index.vue'
 
 Vue.use(VueRouter)
 
@@ -31,6 +32,11 @@ const routes = [
     path: '/Mine',
     name: 'Mine',
     component: Mine
+  },
+  {
+    path: '/Detail',
+    name: 'Detail',
+    component: Detail
   }
 ]
 

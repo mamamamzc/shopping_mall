@@ -18,5 +18,6 @@ module.exports = {
     'space-before-function-paren': 0,
     'indent': 0,
     'quotes': 0,
+    'no-trailing-spaces': 0
   }
 }

@@ -1,15 +1,18 @@
 <template>
-  <div>
-    这是分类
+  <div id="category">
+    <search></search>
+    hhhh
     <menubar></menubar>
   </div>
 </template>
 
 <script>
   import menubar from '../../components/MenuBar.vue'
+  import search from '../../components/Search.vue'
   export default {
     components: {
-      menubar
+      menubar,
+      search
     }
   }
 </script>
