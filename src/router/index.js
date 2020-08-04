@@ -5,11 +5,12 @@ import Category from '../views/Category/index.vue'
 import Mine from '../views/Mine/index.vue'
 import Cart from '../views/Cart/index.vue'
 import Detail from '../components/Detail/index.vue'
+import Amount from '../views/Amount/index.vue'
+import finish from '../views/Amount/finish.vue'
 
 Vue.use(VueRouter)
 
-const routes = [
-  {
+const routes = [{
     path: '/',
     redirect: '/home'
   },
@@ -37,6 +38,16 @@ const routes = [
     path: '/Detail',
     name: 'Detail',
     component: Detail
+  },
+  {
+    path: '/Amount',
+    name: 'Amount',
+    component: Amount
+  },
+  {
+    path: '/finish',
+    name: 'finish',
+    component: finish
   }
 ]
 

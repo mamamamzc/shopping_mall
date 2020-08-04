@@ -69,7 +69,7 @@
     },
     methods: {
       onSubmit() {
-        console.log('提交')
+        this.$router.push('/Amount')
       },
       delCart: function(id) {
         console.log(id)

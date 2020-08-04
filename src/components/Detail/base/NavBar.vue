@@ -9,8 +9,8 @@
   export default {
     methods: {
       onClickLeft() {
-        // this.$router.go(-1)
-        this.$router.push('/Home')
+        this.$router.go(-1)
+        // this.$router.push('/Home')
         // 测试,先返回到首页
         console.log('点击返回')
       }

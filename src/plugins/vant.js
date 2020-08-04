@@ -22,7 +22,24 @@ import {
   Stepper,
   SubmitBar,
   Empty,
-  Dialog
+  Dialog,
+  TreeSelect,
+  Image as VanImage,
+  AddressList,
+  ContactCard,
+  ContactList,
+  ContactEdit,
+  Popup,
+  Cell,
+  CellGroup,
+  RadioGroup,
+  Radio,
+  CouponCell,
+  CouponList,
+  Switch,
+  Field,
+  NumberKeyboard,
+  PasswordInput
 } from 'vant'
 
 // 1.Tabbar
@@ -78,3 +95,39 @@ Vue.use(Empty)
 
 // 17.弹出框
 Vue.use(Dialog)
+
+// 18.分类选择
+Vue.use(TreeSelect)
+
+// 19.图片
+Vue.use(VanImage)
+
+// 20.地址列表
+Vue.use(AddressList)
+
+// 21.联系人
+Vue.use(ContactCard).use(ContactList).use(ContactEdit)
+
+// 22.弹出层
+Vue.use(Popup)
+
+// 23.单元格
+Vue.use(Cell).use(CellGroup)
+
+// 24.单选框
+Vue.use(Radio).use(RadioGroup)
+
+// 25.优惠券
+Vue.use(CouponCell).use(CouponList)
+
+// 26.开关
+Vue.use(Switch)
+
+// 27.输入框
+Vue.use(Field)
+
+// 28.数字键盘
+Vue.use(NumberKeyboard)
+
+// 29.密码框
+Vue.use(PasswordInput)

@@ -6,36 +6,30 @@
     <div class="goodsDetailWrapper">
       <!-- 商品图 -->
       <div class="goodsImage">
-        <img :src="goodsPic" alt="">
+        <img :src="goodsInfo.goods_cover_img" alt="">
       </div>
       <!-- 限时抢购  -->
       <!-- 可选  -->
       <!-- 商品名称 -->
       <div class="productInfo">
-        <div class="title">商品名字</div>
-        <div class="subTitle">小标题</div>
-        <span class="originPrice">￥现在价格</span>
-        <span class="price">原价</span>
-        <span class="totalSales">已售:已售量</span>
+        <div class="title">{{goodsInfo.goods_name}}</div>
+        <div class="subTitle">{{goodsInfo.goods_intro}}</div>
+        <span class="originPrice">￥{{goodsInfo.selling_price}}</span>
+        <span class="price">{{goodsInfo.original_price}}</span>
+        <span class="totalSales">已售:{{goodsInfo.stock_num}}</span>
         <van-divider />
         <div class="shippingInfo">
-          <van-icon name="cluster-o" />注意事项</div>
+          <van-icon name="cluster-o" />注意事项：无</div>
         <van-divider />
         <div class="shippingInfo">
-          <van-icon name="clock-o" />送达时间</div>
+          <van-icon name="clock-o" />送达时间：发货后一周内</div>
       </div>
       <!-- 规格 -->
       <div class="specifications">
-        <div class="specificationsTitle">规格</div>
+        <div class="specificationsTitle">商品详情</div>
         <van-divider dashed />
         <div class="conditions">
-          <span>规格1</span>
-          <span class="conditionsOne">内容1</span>
-        </div>
-        <van-divider dashed />
-        <div class="conditions">
-          <span>规格2</span>
-          <span class="conditionsTwo">内容2</span>
+          <span class="conditionsOne">{{goodsInfo.goods_detail_content}}</span>
         </div>
         <van-divider dashed />
       </div>
@@ -54,12 +48,25 @@
   export default {
     data() {
       return {
-        goodsPic: 'https://img.yzcdn.cn/vant/ipad.jpeg'
+        goodsPic: 'https://img.yzcdn.cn/vant/ipad.jpeg',
+        goodsInfo: ''
       }
     },
     components: {
       GoodsAction,
       NavBar
+    },
+    created() {
+      this.$api.detailData.detail().then(({
+        data
+      }) => {
+        data.filter((item) => {
+          if (item.goods_id === 10272) {
+            this.goodsInfo = item
+            console.log(this.goodsInfo)
+          } else {}
+        })
+      })
     }
   }
 </script>
