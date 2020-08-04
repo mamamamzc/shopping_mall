@@ -2,6 +2,7 @@
   <div id="category">
     <search></search>
     hhhh
+    <van-button type="info" @click="info">信息按钮</van-button>
     <menubar></menubar>
   </div>
 </template>
@@ -13,6 +14,15 @@
     components: {
       menubar,
       search
+    },
+    methods: {
+      info() {
+        this.$api.categoryData.categories().then(({
+          data
+        }) => {
+          console.log(data)
+        })
+      }
     }
   }
 </script>

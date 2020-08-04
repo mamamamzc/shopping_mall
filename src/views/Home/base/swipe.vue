@@ -18,10 +18,10 @@
       return {
         // imageList: []
         // imageList: [
-        //   'http://127.0.0.1:8020/static/img/banner1.jpg',
-        //   'http://127.0.0.1:8020/static/img/banner2.jpg',
-        //   'http://127.0.0.1:8020/static/img/banner3.jpg',
-        //   'http://127.0.0.1:8020/static/img/banner4.jpg'
+        //   'http://127.0.0.1:8020/static/img/banner/banner1.jpg',
+        //   'http://127.0.0.1:8020/static/img/banner/banner2.jpg',
+        //   'http://127.0.0.1:8020/static/img/banner/banner3.jpg',
+        //   'http://127.0.0.1:8020/static/img/banner/banner4.jpg'
         // ]
       }
     },

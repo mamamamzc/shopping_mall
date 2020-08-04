@@ -4,7 +4,7 @@ const homeData = {
   // 首页banner
   async banner() {
     return await axios
-      .get('book/banner')
+      .get('shop/banner')
   }
 }
 
