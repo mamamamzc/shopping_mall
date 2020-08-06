@@ -61,7 +61,7 @@
         data
       }) => {
         data.filter((item) => {
-          if (item.goods_id === 10272) {
+          if (item.goods_id === 10785) {
             this.goodsInfo = item
             console.log(this.goodsInfo)
           } else {}

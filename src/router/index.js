@@ -7,6 +7,9 @@ import Cart from '../views/Cart/index.vue'
 import Detail from '../components/Detail/index.vue'
 import Amount from '../views/Amount/index.vue'
 import finish from '../views/Amount/finish.vue'
+import test from '../views/test/index.vue'
+import Search from '../views/Search/index.vue'
+import list from '../views/Category/list.vue'
 
 Vue.use(VueRouter)
 
@@ -48,6 +51,21 @@ const routes = [{
     path: '/finish',
     name: 'finish',
     component: finish
+  },
+  {
+    path: '/test',
+    name: 'test',
+    component: test
+  },
+  {
+    path: '/Search',
+    name: 'Search',
+    component: Search
+  },
+  {
+    path: '/GoodsList',
+    name: 'GoodsList',
+    component: list
   }
 ]
 

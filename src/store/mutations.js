@@ -1,3 +1,4 @@
+// 修改数据状态的方法集
 import {
   SET_BANNER_IMAGES
 } from './types.js'
